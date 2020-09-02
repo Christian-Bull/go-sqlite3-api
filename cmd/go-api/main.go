@@ -14,14 +14,14 @@ import (
 
 // Status trail status struct
 type Status struct {
-	ID     int    `json:"Id"`
+	ID     string `json:"Id"`
 	Status int    `json:"Status"`
 	Text   string `json:"Text"`
 }
 
 // Tweet struct
 type Tweet struct {
-	ID        int
+	ID        string
 	createdat string
 	text      string
 	status    int
