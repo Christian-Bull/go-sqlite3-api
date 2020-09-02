@@ -2,7 +2,7 @@
 FROM arm32v7/golang:1.15-alpine
 
 # install git - package dependencies
-RUN apk update && apk add git
+RUN apk update && apk add git && apk add g++
 
 # create app dir
 RUN mkdir /app
